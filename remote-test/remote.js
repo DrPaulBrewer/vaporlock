@@ -16,7 +16,7 @@ const fname = 'lockremote';
 const fs = require('fs');
 
 const resultsFile = "./results.csv";
-const location = process.end.location;
+const location = process.env.location;
 
 fs.appendFileSync(resultsFile, "location,start,finish,obtained,error\n");
 
