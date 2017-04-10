@@ -1,0 +1,29 @@
+{
+  "name": "vaporlock",
+  "version": "0.1.0",
+  "description": "Crazy, error-prone scheme to implement advisory locks in the cloud. Built on top of Google Cloud Storage[tm]",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --slow 10000 --timeout 80000"
+  },
+  "author": "drpaulbrewer@eaftc.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drpaulbrewer/vaporlock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/drpaulbrewer/vaporlock/issues"
+  },
+  "homepage": "https://github.com/drpaulbrewer/vaporlock#readme",
+  "devDependencies": {
+    "@google-cloud/storage": "^1.0.0",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "dependencies": {
+    "pipe-to-storage": "^0.8.3",
+    "promise-retry": "^1.1.1",
+    "uuid": "^3.0.1"
+  }
+}
