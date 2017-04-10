@@ -76,7 +76,7 @@ by lengthening the wait time is unclear as the storage mechanism is not atomic a
 
 **Pass the storage object** and your desired expiration time when initializing.
 
-    const vaporlock = require('vaporlock')(storage)(300*1000);  // will request 300 sec = 5 minute locks
+    const vaporlock = require('vaporlock')(storage, 300*1000);  // will request 300 sec = 5 minute locks
 
 ## Usage
 
