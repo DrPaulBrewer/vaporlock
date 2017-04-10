@@ -1,6 +1,6 @@
 {
   "name": "vaporlock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Crazy, error-prone scheme to implement advisory locks in the cloud. Built on top of Google Cloud Storage[tm]",
   "main": "index.js",
   "scripts": {
