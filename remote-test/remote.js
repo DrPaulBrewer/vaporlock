@@ -33,7 +33,7 @@ function locksObtained(n, clear){
     }
     const now = Date.now();
     return (Promise
-	    .all(win.map((x,j)=>{ return vaporlock(bucket, 'lockfile').then( claim(j), ignore ); }))
+	    .all(win.map((x,j)=>{ return vaporlock(bucket, fname).then( claim(j), ignore ); }))
 	    .then(function(){
 		let i,l,sum=0;
 		for(i=0,l=win.length;i<l;++i) sum += win[i];
