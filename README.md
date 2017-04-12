@@ -74,8 +74,7 @@ Each server's node.js program tried to get a "vaporlock" at coordinated 200 sec 
 
 For 9 hours (169 tests) there were no duplicate locks and no zero-winner locks.  The test ended because the UK server hit an unknown exception.
 
-On investigation, The TN server received zero locks because its clock was about 1 second behind the other servers. No attempt was made to align
-the servers beyond the efforts of 
+On investigation, The TN server received zero locks because its clock was about 1 second behind the other servers. 
 
 The other servers won these many locks:
 
