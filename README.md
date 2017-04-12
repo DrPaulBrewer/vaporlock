@@ -66,6 +66,17 @@ tests for this module or use it in a small-scale prototype before attempting to 
 are disastrous or otherwise unacceptable and in such a case you should use something else.  Whether the accuracy can be improved
 by lengthening the wait time is unclear as the storage mechanism is not atomic and need not yield consistent data to each client testing a lock.
 
+### Multiple Server Test Data
+
+Ran a test for several hours with VMs in Chicago (vultr), Chattanooga (epbfi), (digital ocean) London, New York, and San Francisco.
+
+Each server's node.js program tried to get a "vaporlock" at coordinated 200 sec UTC intervals.
+
+For 9 hours (169 tests) there were no duplicate locks and no zero-winner locks.  The test ended because the UK server hit an unknown exception.
+On investigation, The TN server received zero locks because its clock was about 1 second behind the other servers.
+
+The [vaporlock test data is here](./test-data/combined.csv)
+
 ## Installation
 
     npm i vaporlock -S
