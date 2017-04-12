@@ -73,7 +73,18 @@ Ran a test for several hours with VMs in Chicago (vultr), Chattanooga (epbfi), (
 Each server's node.js program tried to get a "vaporlock" at coordinated 200 sec UTC intervals.
 
 For 9 hours (169 tests) there were no duplicate locks and no zero-winner locks.  The test ended because the UK server hit an unknown exception.
-On investigation, The TN server received zero locks because its clock was about 1 second behind the other servers.
+
+On investigation, The TN server received zero locks because its clock was about 1 second behind the other servers. No attempt was made to align
+the servers beyond the efforts of 
+
+The other servers won these many locks:
+
+* Chicago 24
+* San Francisco 43
+* New York 44
+* London 58
+
+The bucket/file used as the lock address was in Google region us-central.
 
 The [vaporlock test data is here](./test-data/combined.csv)
 
