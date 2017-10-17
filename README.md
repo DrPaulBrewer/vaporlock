@@ -1,5 +1,7 @@
 # vaporlock
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/DrPaulBrewer/vaporlock.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/DrPaulBrewer/vaporlock.svg?branch=master)](https://travis-ci.org/DrPaulBrewer/vaporlock)
 
 Experimental advisory locking system built on Google Cloud Storage [tm]
